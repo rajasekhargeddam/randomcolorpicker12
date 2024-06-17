@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner h1{
+    animation: text-content 10s infinite;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.inner h2{
+    font-size: 2rem;
+    margin-top: 50px;
+}
+@keyframes text-content {
+    0%{
+        color: violet;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: yellow;
+    }
+    80%{
+        color: purple;
+    }
+}
+
+@media (max-width: 500px) {
+    .inner h1{
+        font-size: 1rem;
+    }
+    .inner h2{
+        font-size: 1rem;
+    }
+}
